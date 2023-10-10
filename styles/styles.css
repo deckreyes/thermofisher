@@ -15,7 +15,7 @@
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --background-color: #fff;
-  --overlay-background-color: #eee;
+  --overlay-background-color: #fff;
   --highlight-background-color: #ccc;
   --text-color: #000;
 
@@ -230,7 +230,7 @@ main img {
 
 main .section {
   padding: 64px 16px;
-  background-color: rgb(245, 245, 247);
+  background-color: white;
 }
 
 @media (min-width: 600px) {

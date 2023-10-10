@@ -1,18 +1,14 @@
 .columns > div {
   display: flex;
   flex-direction: column;
-  font-size: 15px;
-  width: 75%;  
-  text-align: center;
 }
 
 .columns img {
-  width: 50%;
+  width: 100%;
 }
 
 .columns > div > div {
   order: 1;
-  border: solid black;
 }
 
 .columns > div > .columns-img-col {
@@ -23,11 +19,12 @@
   display: block;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .columns > div {
+    align-items: center;
     flex-direction: unset;
     gap: 32px;
-}
+  }
 
   .columns > div > div {
     flex: 1;
