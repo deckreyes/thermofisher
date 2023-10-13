@@ -3,13 +3,18 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-gap: 16px;
+  width: 770px;
+  padding-top: 25px;
+  padding-left: 100px;
+  font-size: 16px;
+  color: white;
 }
 
 .cards > ul > li {
   border: 1px solid var(--highlight-background-color);
-  background-color: var(--background-color)
+  background-color: rgb(31, 30, 30) ;
 }
 
 .cards .cards-card-body {

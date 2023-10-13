@@ -3,7 +3,6 @@
     display: flex;
     grid-template-columns: auto auto auto auto;
     grid-gap: 30px;
-    background-color: #fbfbfd;
     font-size: 14px;
     color: rgb(9, 92, 143);
   }

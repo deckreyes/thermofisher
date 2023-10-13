@@ -257,9 +257,10 @@ main .location-block-wrapper {
 }
 
 main .subnav-container {
-  height: 5px;
+  height: 1px;
   padding-top: 10px;
-  background-color: #fbfbfd;
+  padding-bottom: 0%;
+  background-color: #fff;
 
 }
 
