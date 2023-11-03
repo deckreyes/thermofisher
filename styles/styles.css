@@ -79,7 +79,7 @@ header {
   height: var(--nav-height);
 }
 
-h1, h2, h3,
+h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
@@ -89,7 +89,6 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
 h2 { font-size: var(--heading-font-size-xl) }
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
@@ -139,7 +138,7 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-/* buttons */
+/* buttons 
 a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-block;
@@ -160,6 +159,7 @@ a.button:any-link, button {
   border-radius: 30px;
 }
 
+
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
@@ -175,6 +175,7 @@ a.button.secondary, button.secondary {
   border: 2px solid currentcolor;
   color: var(--text-color)
 }
+*/
 
 main input {
   font-size: 1.25rem;

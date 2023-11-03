@@ -3,23 +3,45 @@
     display: flex;
     flex-direction: column;
     width: 1000px;
-    color: black; 
     font-size: 30px;
     text-indent: 100px;
   }
 
+.contenttitle p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contenttitle h1 {
+  font-size: 30px;
+  text-indent: 100px;
+  font-weight: 100;
+  margin: 0px;
+  padding: 0px;
+}  
+
+.contenttitle a {
+  font-size: 17px;
+  color: gray;
+  text-align: left;
+}
+
+.contenttitle a:hover {
+  color: black;
+  cursor: pointer;
+}
 
 .contenttitle div:nth-child(2) {
     font-size: 17px;
     color: gray;
     text-align: left;
- }
+}
 
  .contenttitle div:nth-child(3) {
   font-size: 13px;
   color: grey;
 }
 
-.contenttitle div:nth-child(3) img {
-  width: 300px;    
+.contenttitle div:nth-child(4) img {
+  width: 600px;    
 }

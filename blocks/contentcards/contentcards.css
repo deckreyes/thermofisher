@@ -1,0 +1,51 @@
+.contentcards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 16px;
+  width: 770px;
+  padding-top: 25px;
+  padding-left: 100px;
+  font-size: 16px;
+  color: white;
+}
+
+.contentcards h4 {
+  font-size: 17px;
+  font-weight: 100;
+  padding: 0px;
+  color: white;
+  margin: 15px;
+}  
+
+.contentcards a {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+}
+
+.contentcards > ul > li {
+  border: 1px solid var(--highlight-background-color);
+  background-color: rgb(31, 30, 30) ;
+}
+
+.contentcards .cards-card-body {
+  margin: 0px;
+  font-size: 12px;
+  color: gray;
+}
+
+.contentcards .cards-card-image {
+  line-height: 0;
+}
+
+.contentcards .cards-card-body > *:first-child {
+  margin-top: 0;
+}
+
+.contentcards > ul > li img {
+  width: 375px;
+  height: 200px;
+}
