@@ -9,6 +9,7 @@
         '.mashsb-container',
         '.adjacent-entry-pagination',
         '.pagination-previous',
+        '.entry-comments'
       ]);
   
       const entrytitle = document.getElementsByClassName("entry-title");
@@ -25,29 +26,16 @@
       const table = WebImporter.DOMUtils.createTable(cells, document);
       main.prepend(table);
 
-      const contentsection = document.getElementsByClassName("selectionShareable");
-      const contentsectiontitle = document.getElementsByTagName("h4");
+      const contentsection = document.getElementsByClassName("entry-content");      
       const contentcells = [
         ['contentSection'],
-        [contentsection[3]],
-        [contentsectiontitle[0]],
-        [contentsection[4]],
-        [contentsectiontitle[1]],
-        [contentsection[5]],
-        [contentsectiontitle[2]],
-        [contentsection[6]],
-        [contentsectiontitle[3]],
-        [contentsection[7]],
-        [contentsectiontitle[4]],
-        [contentsection[8]],
-        [contentsectiontitle[5]],
-        [contentsection[9]]
+        [contentsection[0]]
        ];
 
       const tableContent = WebImporter.DOMUtils.createTable(contentcells, document);
       main.append(tableContent);
 
-      const cardsection1 = document.getElementsByClassName("related-post related-1"); 
+      const cardsection1 = document.getElementsByClassName("related-post related-1");   
       const cardsection2 = document.getElementsByClassName("related-post related-2"); 
       const cardsection3 = document.getElementsByClassName("related-post related-3"); 
       const cardsection4 = document.getElementsByClassName("related-post related-4"); 
@@ -57,11 +45,12 @@
         [cardsection2[0]],
         [cardsection3[0]],
         [cardsection4[0]]  
-       ];
-
-      const tableCards = WebImporter.DOMUtils.createTable(cardcells, document);
-      main.append(tableCards);
-
+      ];
+      
+      if (cardsection1[0]){
+        const tableCards = WebImporter.DOMUtils.createTable(cardcells, document);
+        main.append(tableCards);
+      }  
   
 
       const authorsection = document.getElementsByClassName("author-box-title");          
