@@ -25,32 +25,18 @@ export default {
     const tableLinks = WebImporter.DOMUtils.createTable(linkscells, document);
     main.prepend(tableLinks);
 
-    // Page Header
-    const pageheader = document.getElementsByClassName("page-header");      
+    // Page Contents
+    const pagetitle = document.getElementsByClassName("page-header");      
+    const alertinfo = document.getElementsByClassName("alert alert-info");   
+    const contentsection = document.getElementsByClassName("parsys_column cq-colctrl-default");   
     const cells = [
-      ['pageHeader'],
-      [pageheader[0]]
+      ['pagecontents'],
+      [pagetitle[0]],
+      [alertinfo[0]],
+      [contentsection[0]]
     ];
     const table = WebImporter.DOMUtils.createTable(cells, document);
     main.append(table);
-
-    // Alert Info
-    const alertinfo = document.getElementsByClassName("alert alert-info");      
-    const alertcells = [
-      ['alertinfo'],
-      [alertinfo[0]]
-    ];
-    const alerttable = WebImporter.DOMUtils.createTable(alertcells, document);
-    main.append(alerttable);
-
-    // Content
-    const contentsection = document.getElementsByClassName("parsys_column cq-colctrl-default");      
-    const contentcells = [
-      ['contentSection'],
-      [contentsection[0]]
-     ];
-     const contenttable = WebImporter.DOMUtils.createTable(contentcells, document);
-     main.append(contenttable);
 
     // find the <title> element
     const title = document.querySelector('title');
